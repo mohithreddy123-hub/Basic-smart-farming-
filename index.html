@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Farming</title>
+</head>
+<body>
+
+<h2>Crop Recommendation System</h2>
+
+<form action="/predict" method="post">
+
+Nitrogen: <input type="text" name="n"><br><br>
+Phosphorus: <input type="text" name="p"><br><br>
+Potassium: <input type="text" name="k"><br><br>
+Temperature: <input type="text" name="temp"><br><br>
+Humidity: <input type="text" name="humidity"><br><br>
+pH: <input type="text" name="ph"><br><br>
+Rainfall: <input type="text" name="rain"><br><br>
+
+<button type="submit">Predict</button>
+
+</form>
+
+<h3>{{ prediction_text }}</h3>
+
+</body>
+</html>
